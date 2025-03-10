@@ -7,7 +7,6 @@ const BlacklistTokenSchema = new mongoose.Schema(
     { timestamps: true }
 );
 
-// ✅ Prevent model overwriting
 const BlacklistToken = mongoose.models.BlacklistToken || mongoose.model("BlacklistToken", BlacklistTokenSchema);
 
 module.exports = BlacklistToken;
